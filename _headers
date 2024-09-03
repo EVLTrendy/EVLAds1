@@ -1,0 +1,3 @@
+/*
+  Access-Control-Allow-Origin: https://test.com
+  X-Frame-Options: ALLOW-FROM https://test.com
