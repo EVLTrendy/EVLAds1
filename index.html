@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <meta name="monetag" content="696334761b2ef1281f7a371e0e83b65d">
-    <script src="https://alwingulla.com/88/tag.min.js" data-zone="98926" async data-cfasync="false"></script>
     <title>The Best Place</title>
 </head>
 <body>
@@ -48,11 +46,17 @@
     <!-- Ad space (smaller version 128x72) only shown on Website 2 -->
     <div class="ad-container">
         <div class="ad-box">
-            <p>Hey Cool Guy!</p>
+            <h1>Your 640x360 Ad</h1>
+            <p>This is a special ad displayed in the 640x360 view!</p>
         </div>
     </div>
-    <script src="https://alwingulla.com/88/tag.min.js" data-zone="98926" async data-cfasync="false"></script>
 
-    <div style="margin-top: 500px;"></div>
+    <script>
+        // JavaScript to detect if the site is loaded within an iframe
+        if (window.self !== window.top) {
+            document.querySelector('.container').style.display = 'none'; // Hide full view content
+            document.querySelector('.ad-container').style.display = 'block'; // Show ad content
+        }
+    </script>
 </body>
 </html>
