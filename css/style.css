@@ -118,8 +118,8 @@ a:visited {
     }
 
     .ad-box {
-        width: 360px;
-        height: 640px;
+        width: 640px;
+        height: 360px;
         background-color: #f4f4f4;
         border: 2px solid #ccc;
         display: flex;
