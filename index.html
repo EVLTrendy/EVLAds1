@@ -5,26 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="https://alwingulla.com/88/tag.min.js" data-zone="98926" async data-cfasync="false"></script>
     <title>The Best Place</title>
 </head>
 <body>
     <div class="container"> 
         <div class="box-1"> 
-            <h1>  Hello World</h1>
+            <h1>Hello World</h1>
             <p>This website is here to spread awareness for how cool of a person you are!</p>
         </div>
         <div class="box-2"> 
-            <h1> Space Monkeys</h1>
+            <h1>Space Monkeys</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem itaque alias at saepe distinctio odio eveniet sed et, aut nostrum consequuntur sapiente, quibusdam officia veritatis repellat ea vero! Quaerat, minus.</p>
         </div>
         <div class="categories">
             <h2>Categories</h2>
             <ul>
-                <li> <a href="#">Category Red</a></li>
-                <li> <a href="#">Category Blue</a></li>
-                <li> <a href="#">Category Yellow</a></li>
-                <li> <a href="#">Category Green</a></li>
+                <li><a href="#">Category Red</a></li>
+                <li><a href="#">Category Blue</a></li>
+                <li><a href="#">Category Yellow</a></li>
+                <li><a href="#">Category Green</a></li>
             </ul>
         </div>
         <form class="my-form">
@@ -40,24 +39,25 @@
                 <label>Message:</label>
                 <textarea name="message"></textarea>
             </div>
-            <input class="button" type="submit" value="Submit"  name="">
+            <input class="button" type="submit" value="Submit" name="">
         </form>
-    </div> <!--./container -->
+    </div> <!-- ./container -->
     
-    <!-- Ad space (smaller version 128x72) only shown on Website 2 -->
+    <!-- Ad space to be shown only in iframe (Website 2) -->
     <div class="ad-container">
         <div class="ad-box">
-            <img src="./images/TheseAdsHelpFundUs-ezgif.com-resize.gif" alt="">
+            <img src="./images/TheseAdsHelpFundUs-ezgif.com-resize.gif" alt="Ad" width="640" height="360">
         </div>
     </div>
 
     <script>
         // JavaScript to detect if the site is loaded within an iframe
         if (window.self !== window.top) {
-            document.querySelector('.container').style.display = 'none'; // Hide full view content
+            document.querySelector('.container').style.display = 'none'; // Hide full content
             document.querySelector('.ad-container').style.display = 'block'; // Show ad content
+        } else {
+            document.querySelector('.ad-container').style.display = 'none'; // Hide ad if not embedded
         }
     </script>
-    <script src="https://alwingulla.com/88/tag.min.js" data-zone="98926" async data-cfasync="false"></script>
 </body>
 </html>
